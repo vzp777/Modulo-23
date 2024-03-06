@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-12T18:19:32.999Z",
+    "end": "2023-07-12T18:19:33.804Z",
+    "duration": 805,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c47f138-bf3e-43b9-8028-5a6f67366d34",
+      "title": "",
+      "fullFile": "cypress/e2e/checkout.cy.js",
+      "file": "cypress/e2e/checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce9220b8-c5b3-40e3-a57d-4b8a86494838",
+          "title": "Checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve realizar o checkout com sucesso",
+              "fullTitle": "Checkout deve realizar o checkout com sucesso",
+              "timedOut": null,
+              "duration": 782,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let nome = _faker.faker.person.firstName;\nlet sobrenome = _faker.faker.person.lastName;\nlet pais = _faker.faker.location.countryCode;\nlet rua = _faker.faker.location.streetName;\nlet cidade = _faker.faker.location.city;\nlet estado = _faker.faker.location.countryCode;\nlet cep = _faker.faker.location.zipCode;\nlet fone = _faker.faker.phone.number;\nlet email = _faker.faker.internet.email();\ncy.adicionaProduto();\ncy.checkout(nome, sobrenome, pais, rua, cidade, estado, cep, fone, email);",
+              "err": {},
+              "uuid": "93aeea32-fef0-4e53-a03c-82c6ce5e62f8",
+              "parentUUID": "ce9220b8-c5b3-40e3-a57d-4b8a86494838",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93aeea32-fef0-4e53-a03c-82c6ce5e62f8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 782,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

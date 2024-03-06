@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-12T18:18:31.855Z",
+    "end": "2023-07-12T18:18:57.512Z",
+    "duration": 25657,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5282c24d-e927-48f5-a6b9-474fa2c00f36",
+      "title": "",
+      "fullFile": "cypress/e2e/cadastroConta.cy.js",
+      "file": "cypress/e2e/cadastroConta.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d692817f-ecb0-4037-97a6-52920ed42e6b",
+          "title": "Cadastro de conta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve cadastrar uma conta com sucesso",
+              "fullTitle": "Cadastro de conta deve cadastrar uma conta com sucesso",
+              "timedOut": null,
+              "duration": 10837,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let email = _faker.faker.internet.email();\nemailJaCadastrado = email;\n_minhaConta.default.preencheEmailSenha(email, dados.senha);\n_minhaConta.default.verificaSucesso();",
+              "err": {},
+              "uuid": "039721f9-1f69-4fda-b82b-c0e1b5448bcc",
+              "parentUUID": "d692817f-ecb0-4037-97a6-52920ed42e6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não deve cadastrar uma conta usando email já cadastrado",
+              "fullTitle": "Cadastro de conta não deve cadastrar uma conta usando email já cadastrado",
+              "timedOut": null,
+              "duration": 6360,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_minhaConta.default.preencheEmailSenha(emailJaCadastrado, dados.senha);\n_minhaConta.default.mensagemDeErro();",
+              "err": {},
+              "uuid": "1e406b86-024e-4bc8-b9e1-94505a3d4b3e",
+              "parentUUID": "d692817f-ecb0-4037-97a6-52920ed42e6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não deve cadastrar uma conta com email inválido",
+              "fullTitle": "Cadastro de conta não deve cadastrar uma conta com email inválido",
+              "timedOut": null,
+              "duration": 3563,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let email = \"teste\";\n_minhaConta.default.preencheEmailSenha(email, dados.senha);\n_minhaConta.default.verificaFalha();",
+              "err": {},
+              "uuid": "66dd0e72-b118-4923-ba29-c7c6f99588a0",
+              "parentUUID": "d692817f-ecb0-4037-97a6-52920ed42e6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não deve cadastrar uma conta com senha em branco",
+              "fullTitle": "Cadastro de conta não deve cadastrar uma conta com senha em branco",
+              "timedOut": null,
+              "duration": 4565,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let email = _faker.faker.internet.email();\n_minhaConta.default.preencheEmail(email);\n_minhaConta.default.mensagemDeErro();",
+              "err": {},
+              "uuid": "c9255fbb-e134-4832-beb7-3aacec04cb77",
+              "parentUUID": "d692817f-ecb0-4037-97a6-52920ed42e6b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "039721f9-1f69-4fda-b82b-c0e1b5448bcc",
+            "1e406b86-024e-4bc8-b9e1-94505a3d4b3e",
+            "66dd0e72-b118-4923-ba29-c7c6f99588a0",
+            "c9255fbb-e134-4832-beb7-3aacec04cb77"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25325,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ebac_qe_m22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patricia-De-Jonghe/EBAC_QE_M22.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patricia-De-Jonghe/EBAC_QE_M22/issues"
+  },
+  "homepage": "https://github.com/Patricia-De-Jonghe/EBAC_QE_M22#readme",
+  "devDependencies": {
+    "cypress": "^12.16.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "faker": "^6.6.6",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
